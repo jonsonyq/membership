@@ -1,36 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>文湘生态休闲农庄</title>
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<!-- SUI框架 -->
-
-<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
-
-<!-- 百度MAPAPI -->
-
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eYf9sA6yVTFHlh9ytU4a0EYY"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
-<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-
-<!-- 其他css引用 -->
-<link rel="stylesheet" href="common.css">
-
-<!-- 其他js引用 -->
-
-<!-- 其他style -->
-
-</head>
-<body>
-<!-- 头部 -->
-
-<!-- /头部 -->
-<!-- 主体 -->
 
 	<div class="page-group">
 		<div id="page-fixed-tab-infinite-scroll" class="page">
@@ -54,7 +21,7 @@
 
 			    	function create_map(){
 			    		$('#allmap_detail').height($(window).height()-100);
-						var map = new BMap.Map("allmap_detail");  
+						var map = new BMap.Map("allmap_detail");
 						map.addControl(new BMap.MapTypeControl({type:BMAP_ANCHOR_TOP_LEFT,mapTypes: [BMAP_NORMAL_MAP]}));
 						map.centerAndZoom(new BMap.Point(113.908967,27.7687), 13);
 						map.enableScrollWheelZoom(true);
@@ -62,7 +29,7 @@
 						// 添加定位控件
 						var geolocationControl = new BMap.GeolocationControl();
 						geolocationControl.addEventListener("locationSuccess", function(e){
-						    
+
 						});
 					    geolocationControl.addEventListener("locationError",function(e){
 						    // 定位失败事件
@@ -83,7 +50,7 @@
 							}
 							else {
 								alert('failed'+this.getStatus());
-							}        
+							}
 						},{enableHighAccuracy: true});
 
 
@@ -93,7 +60,7 @@
 							location.href=url;
 						});
 					}
-					
+
 			    </script>
 			    			    <script type="text/javascript" src="/Public/Home/js/map_index.js"></script>
 			    <div align="center" id="detail_bottom" style="width:100%; ">
@@ -105,10 +72,10 @@
 			    <div align="center" style="font-size:12px; color:#CCC;">&nbsp;</div>
 			    </div>
 
-		    	
-			
+
+
 		    </div>
-		</div>    
+		</div>
 
     <div class="popup popup-detail">
 	  <header class="bar bar-nav">
@@ -150,7 +117,7 @@
 				          </div>
 					  </div>
 				      <div id="tab2" class="tab">
-				          <div class="list-block media-list inset" style="margin:0px 0px;">           
+				          <div class="list-block media-list inset" style="margin:0px 0px;">
 				            	<div class="card demo-card-header-pic">
 		<div valign="bottom" class="card-header color-white no-border no-padding">
 		  <img class='card-cover' src="item2_1.jpeg" alt="">
@@ -176,7 +143,7 @@
 				              <div class="list-block media-list inset" style="margin:0px 0px;">
 			            <ul class="list-container">
 </ul>
-</div>				       
+</div>
 				      </div>
     			</div>
 
@@ -204,7 +171,7 @@
 		  		create_map();
 			});
 			$.init();
-		});		
+		});
 	</script>
 
 </footer>
